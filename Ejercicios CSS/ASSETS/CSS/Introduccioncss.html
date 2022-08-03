@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes introduccion CSS</title>
+    <link rel="stylesheet" href="/ASSETS/CSS/style.css">
+      
+    <!--Podemos agregar estilos de 3 formas
+    
+    - Externa con la etiqueta <link> (buena practica de programacion)
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    - Interna directamente en el atributo de la etiqueta
+        <p style="font-size: medium; color: blueviolet;">
+
+    - Interna dentro de la etiqueta <style>
+        <style> p { color: brown;} </style>
+
+    -->
+</head>
+<body>
+
+<!--
+    Cuando agregamos estilos de forma internta, siempre se tomara con mayor jerarquia el estilo que este incrustado directamente en la etiqueta, pasando por alto todos estilos adicionales que lo afecten.
+
+    Jerarquia:
+
+        1. Lo que esta de forma interna en la etiqueta
+        2. Lo que se agrega dentro de etiquetas <style>
+        3. Lo que se agrega de forma externa
+
+
+-->
+<!--Podemos agregar estilos de 3 formas
+    
+    - Externa con la etiqueta <link> (buena practica de programacion)
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    - Interna directamente en el atributo de la etiqueta
+        <p style="font-size: medium; color: blueviolet;">
+
+    - Interna dentro de la etiqueta <style>
+        <style> p { color: brown;} </style>
+
+    -->
+
+
+        <p style="font-size: medium; color:aqua"> Este es un parrafo para probar diferentes estilos (mala practica)</P>
+            <style> p { color: rgb(165, 42, 128);} </style>
+
+       
+        <P> Este es un parrafo para probar diferentes estilos</P>
+
+        <style>
+
+        p { color: blue(32,0,237);}
+
+        </style>        
+         <h3>este es el salon de clases de la cohorte 15</h3>
+         <br>
+
+        <div class="cohorte15">
+         <span id="Jaciel" class="cohorte15"> Jaciel</span>
+         <br>
+         <span id="Maryana" class="cohorte15"> Maryana</span>
+         <br>
+         <span id="Paulina" class="cohorte15"> Paulina</span>
+         <br>
+         <span id="Vanessa" class="cohorte15"> Vanessa</span>
+         <br>
+         <span id="Ulises" class="cohorte15"> Ulises</span>
+        </div>
+         <br>
+         <br>
+         <br>
+</head>
+<body>
+    <!--codigo de la caja flotante-->
+    <div class="cajaflotante">
+        <div class="cabecera">Soy una cabecera </div>
+        <div class="contenido">Soy un contenido dentro de la caja</div>
+        <div class="footer"></div>
+            <button class="primario">Aceptar</button>
+            <button class="secundario">Cancelar</button>
+        </div>
+    </div>
+    <!--Aqui termina la caja flotante-->
+<br>
+<br>
+    <!--Botones-->
+    <button class="facebook">Facebook</button>
+    <button class="instagram">Instagram</button>
+    <button class="tiktok">TikTok</button>
+
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+/*
+selector: etiqueta p
+propiedad: color
+valor: rgb(0, 145, 29)
+*/
+/*
+
+Selectores
+
+    - Selectores por etiqueta
+
+    Son instrucciones que podemos usar para seleccionar nuestras ETIQUETAS de HTML. Los selectores son una manera de identificar una etiqueta en particular.
+
+    Una vez que seleccionamos nuestro elemento, abrirelos llaves para poder modificar sus propiedades. Cerramos las llaves cuando terminemos de modificar.
+
+    - Selectores por clase
+
+    Cuando usamos una clase, podemos realizar la misma modificaciones para todos los elementos que tengan esa clase en comun. Para modificarlo, los seleccionas con un punto.
+
+    Ejemplo:
+        .nomnreDeLaClase
+
+
+    - Selectores por ID
+
+    Usamos un ID como manera de identificacion de un elemento en particular, y lo seleccionamos con el signo de gato o numeral
+
+    Ejemplo:
+        #nombreDelId
+*/
+/* para poder seleccionar elemontos por su ID, utilizarnos el signo # */
+
+
+
+body {background-color: pink;}
+
+p { color: green(0, 145, 29); background-color: rgb(215, 215, 215)}
+
+.cohorte15 { background-color: blue;}
+
+
+
+.caja {
+    
+    /*estilos de la caja. todos los elementos de HTML se tratan como si estuvieran dentro de la caja*/
+    margin: 30px; /*margen de la caja*/
+    padding: 20px; /*margen interno*/
+    border-radius: 20px;
+    
+    background-color: yellow;}
+
+.cajaflotante{
+    margin: 40px, 30px, 0px, 30px;
+    background-color: rosybrown;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+    border-radius: 5px;
+    border-top: solid 0px;
+}
+.contenido{
+    padding: 15px;
+}
+.cabecera{
+      padding: 10px;
+      border-bottom: solid 1px #eeeeee;
+}
+.footer{
+    padding: 10px;
+    border-bottom: solid 1px #eeeeee;
+}
+
+.primario{
+    margin: 5px;
+    border-color: beige;  /*darle color al fondo del boton*/
+    border: 0px; /*quitar el borde*/
+    padding: 5px; /*dar espacio al contenido del boton*/
+    color: black; /*color al texo del boton*/
+    border-radius: 2px; /**/
+}
+
+.secundario{
+    border-color: gray;  /*darle color al fondo del boton*/
+    border: 0px; /*quitar el borde*/
+    padding: 5px; /*dar espacio al contenido del boton*/
+    color: blue; /*color al tecto del boton*/
+    border-radius: 2px; /**/
+}
+
+.facebook{
+    margin: 20px;
+    padding: 15px;
+    background-color: #365998;
+    color:white;
+    font-size: 20px;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+}
+.instagram{
+    margin: 20px;
+    padding: 15px;
+    background-color: #8134af;
+    color:white;
+    font-size: 20px;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+}
+.tiktok{
+    margin: 20px;
+    padding: 15px;
+    background-color: #000;
+    color:white;
+    font-size: 20px;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+}

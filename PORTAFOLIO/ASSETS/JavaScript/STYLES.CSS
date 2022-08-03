@@ -1,0 +1,93 @@
+/* Link para paleta de colores */
+
+/* https://colorhunt.co/palette/5f71616d8b74efead8d0c9c0 */
+
+
+/*body {
+    font-family: 'Montserrat', sans-serif;
+}*/
+
+.alpha {
+    color: #198754;
+}
+.beta {
+    color: yellow;
+    background-color: $indigo-900;
+}
+
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btn-primary {
+    background-color: #66BFBF;
+}
+
+/*
+* {
+    box-sizing: border-box;
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+} */
+
+/* Comentar para evitar errores con estilos de bootstrap */
+
+/* nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    background-color: #eaeaea;
+    transition: top 500ms ease-in-out;
+} */
+
+/* .links {
+    display: flex;
+    margin: 0 -1em;
+}
+
+.links a {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+} */
+
+/* nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+} */
+
+
+
+
+
+
+/* 
+label {
+    margin: 10px;
+}
+
+
+
+table,
+th,
+td {
+    border: 1px solid black;
+} */
