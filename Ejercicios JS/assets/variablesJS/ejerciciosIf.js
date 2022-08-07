@@ -6,7 +6,7 @@
 
 var numero = prompt("escribe un numero");
 
-if ( numero % == 2){
+if ( numero % 2){
 	alert("Es un numero Par");
 } else {
 	alert("No es par");

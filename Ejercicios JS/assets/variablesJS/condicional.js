@@ -28,7 +28,7 @@
 
 var hora = 8;
 
-if (hora == 8) {
+if (hora == 5) {
 	console.log("Buen dia");
 }
 
@@ -179,4 +179,3 @@ function miCarrito(dinero) {
 }
 
 alert(miCarrito(nineros));
-

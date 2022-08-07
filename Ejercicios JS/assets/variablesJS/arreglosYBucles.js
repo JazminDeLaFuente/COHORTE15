@@ -389,7 +389,18 @@ while (numeroParaSumar <10){
 
 
 */
-//contador sencillo
+//Contador sencillo
+
+let valorInicial = 0; //Declaramos un valor inicial en 0
+while (valorInicial < 5) {
+  //mientras el valor inicial sea <5
+  valorInicial++; //Ejecutamos este bloque de codigo (1 en 1)
+  console.log("Este es el contador sencillo", valorInicial); //Imprimimos los resultados
+}
+
+//La sentencia while se ejecuta mientras se sigan obtiendo resultados positivos (true), y hasta que el resultado sea false, se para.
+
+//Practica grupal: Escribir un programa que pida al usuario un numero entero positivo y muestre por pantalla todos los numeros impares desde 1 hasta ese numero
 
 
 
@@ -452,11 +463,58 @@ while (numeroWhile <5){ //mientras variable sea menor a 5
     console.log(numeroWhile); // lo imprimo
 }
 
-console.log("Do While");
 
-let numeroDoWhile = 0; //iniciamos en 0
-do { //hacemos esto...
+console.log("Do WHile");
+let numeroDoWhile = 0; //inciamos en 0
+do{ //hacemos esto...
     console.log(numeroDoWhile); //imprimir
     numeroDoWhile ++; //aumentar en 1
 }
+while (numeroDoWhile<5);//...mientras numero sea menor a 5
 
+
+/*
+
+Sentencia FOR (para)
+
+Este ciclo sirve para iterar sobre una seccion de una variable. Es diferente al while por que le podemos pasar una lista de valores y ejecutar una vez por cada uno de ellos. Para esto tenemos tres elementos:
+
+
+- El valor inicial de la variable que vamos a iterar (i = 0)
+- La condicion que tiene que cumplirse para que el bucle se siga ejecutando (i <5)
+- La operacion que se realiza una vez que termina el bucle (i++)
+
+Estructura basica del for:
+
+for (valor inicial, condicion, operacion){
+
+}
+
+*/
+
+//Ejemplo: 
+
+console.log("For");
+for (let i = 0; i < 10; i++){
+console.log(i);
+}
+
+//let i=0 es mi valor inicial
+// i < 5 establece la condicion para que el bucle se siga ejecutando
+// i++ incrementa el valor en 1
+
+
+let animalitosDelBosque =["ardillas", "conejos", "venados", "osos", "mariposas"];
+
+//in: posiciones EN el arreglo
+
+for (posiciones in animalitosDelBosque){
+    console.log(posiciones)
+}
+//of: valores DEL arreglo
+for (valores of animalitosDelBosque){
+    console.log(valores)
+}
+
+// for in (lo que vamos a buscar en el arreglo)
+// for of (lo que vamos a buscar del arreglo )
