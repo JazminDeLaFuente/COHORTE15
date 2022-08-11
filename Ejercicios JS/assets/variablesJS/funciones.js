@@ -130,7 +130,7 @@ console.log( areaTriangulo(8, 4));
 
 //using escape
 
-prompt("Hola soy \n "Jazmin\" ");
+prompt("Hola soy \n "Jazmin" ");
 
 ////////////////////////////////////////////////
 
@@ -139,8 +139,8 @@ prompt("Hola soy \n "Jazmin\" ");
 const Can = {
     "nombre" : "Velvet",
     "edad": 14,
-    "color": "Caramelo"
-    "peso" :50
+    "color": "Caramelo",
+    "peso" :50,
 }
 
-const myFunc = () 
+const myFunc = ()

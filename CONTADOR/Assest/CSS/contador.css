@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(175, 153, 177);
+}
+
+h1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h2{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+
+#decrementar{
+    background-color: rgb(84, 17, 192);
+    color: whitesmoke;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#resetear{
+    background-color: rgb(223, 41, 71);
+    color: whitesmoke;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#incrementar{
+    background-color: rgb(69, 121, 34);
+    color: whitesmoke;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}

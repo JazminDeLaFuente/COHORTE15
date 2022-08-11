@@ -1,8 +1,15 @@
+/* CODIGO CONDICIONAL se ejecuta o no en dependencia a la respuesta de una pregunta.
+
+IF  
+*todo debe ser evaluable como verdadero o falso.
+*Si el codigo es verdadero, se ejecuta. 
+*Si el codigo es falso, no se ejecuta
+*Usamos "else" para contemplar mas de una condicion
+*/
+
 //const nineros =  false;
 //const hambre = true;
-
 //alert(nineros == hambre); //false 
-
 //alert(nineros || hambre); //true
 
 
@@ -25,6 +32,7 @@
 // true => false, false => true
  
 
+ 
 
 var hora = 8;
 
@@ -120,7 +128,10 @@ if(nineros <= 10) {
 }
 
 ///////////////////////////////////////////////////////////
-//SWITCH
+//SWITCH permite usar demaciados "if" en una condicion multiple.
+//utilizamos "case" para evaluar cada caso.
+//"breack" para terminar la evaluacion de cada caso.
+//"default" para especificar que hacer fuera de los otros casos.
 
 // var dia = new Date().getDay();
 
@@ -179,3 +190,5 @@ function miCarrito(dinero) {
 }
 
 alert(miCarrito(nineros));
+
+

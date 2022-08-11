@@ -152,7 +152,7 @@ a = "2"
 //constante
 //es una variable con un dato que no va a cambiar
 const a = 1;
-// variables constantesdeben mantenerse con un solo valor, no es posibles cambialres el valor posterior a su declaracion.
+// variables constantes deben mantenerse con un solo valor, no es posibles cambialres el valor posterior a su declaracion.
 
 //utilizamos coma para separar los valores
 
@@ -166,3 +166,4 @@ const a = 1;
 //undefined
 //combinacion
 //(4) [1, 'hola', null, '5']
+

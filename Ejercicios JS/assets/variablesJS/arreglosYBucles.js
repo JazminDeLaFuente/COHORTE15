@@ -204,7 +204,7 @@ console.log ("imprimimos la rebanada del arreglo original", saludo3);
 var saludo4 = saludo1.slice(-9);
 console.log ("imprimimos la rebanada del arreglo original", saludo4);
 */
-/*splice():  modificar el arreglo en 3 formas distintas
+/*SPLICE():  modificar el arreglo en 3 formas distintas
 
 *eliminae elementos del arreglo 
 *agregar elementos nuevos al arreglo
@@ -245,14 +245,15 @@ nos permiten acceder
 /*
 var ensalada = ["jitomate", "zanahoria", "lechuga", "chicharos", "cebolla"];
 
-//length(): Nos permite saber el numero de elementos o Longitud del arreglo
+//LENGTH 
+length(): Nos permite saber el numero de elementos o Longitud del arreglo
 
 console.log("Tenemos estos elementos en el arreglo ensalada", ensalada.length);
 
-//join(): nos permite unir los elementos del arreglo con una cadena de texto *sirve como un separador
+//JOIN join(): nos permite unir los elementos del arreglo con una cadena de texto *sirve como un separador
 console.log("Esta es una feliensalada:", ensalada.join("feli"));
 
-//concat(): Nos permite unir dos o mas arrays en uno solo. Devuelve un nuevo arreglo con los elementos de los otros arreglos.
+//CONCAT concat(): Nos permite unir dos o mas arrays en uno solo. Devuelve un nuevo arreglo con los elementos de los otros arreglos.
 
 let dulces = ["galletas", "chetos", "glorias", "gansitos", "picafresas", "tamborines", "galletas"];
 
@@ -260,12 +261,12 @@ let mezcla = ensalada.concat(dulces);
 console.log("Esta es mi mezcla: ", mezcla);
 
 
-//indexOf: Nos permite saber la posicion de un elemento dentro del arreglo
+//INDEXOF: Nos permite saber la posicion de un elemento dentro del arreglo
 
 
 console.log("La posicion de los chetos de mi arreglo dulces:", dulces.indexOf("chetos"));
 
-//lastindexOf(): Nos permite saber la ultima posicion de un elemento determinado dentro del arreglo.
+//LASTINDEXOF(): Nos permite saber la ultima posicion de un elemento determinado dentro del arreglo.
 
 console.log("La ultima posicion de las galletas es:", dulces.lastIndexOf("galletas"));
 */
@@ -314,7 +315,7 @@ console.log("estos son los numeros que cumplen la condicion al ser mayores de 5 
 */
 
 /*
-
+FOREACH
 forEach(): Este metodo nos permite llamar a una funcion "callback" especifica una vez por cada elemento sobre el que se itrea del array. Al igual que otros iteradores como map o el filter, este metodo recibe algunos parametros:
 
     - Elemento actual: elemento del arreglo que se va a evaluar o sobre el que se hace la iteracion
@@ -342,6 +343,14 @@ console.log("Estos son los elementos del array que no son impares", listaNumeros
 
 ////////////////////////////////////////////////////////
 
+/* CODIGO ITERATIVO
+* Una interacion es la repetición de código dentro del bucle
+*Se repite una tarea de un numero definido de veces.
+*Lo que especificamos no es la sentencia a ejecutar, sino cúando parar la ejecucion
+*Tener en cuenta el numero de repeticiones y los valores inicial y final que tendrá el índice
+código interativo - Estructura de un bucle
+
+*/
 
 
 /*
@@ -426,7 +435,7 @@ while (numeroInicial <= valorLimite) { //MIENTRAS el numero inicial sea menor qu
 
 /*
 
-Do While (HACER MIENTRAS O HACER HASTA)
+DO WHILE (HACER MIENTRAS O HACER HASTA)
 
 El bucle do while nos sirve para ejecutar una sentencia especififcada hasta que la condicion de aprobacion se evalua como falsa. La condicion se evalua despues de ejecutar la sentencia, dando como resultado que la sentencia especificada se ejecuta al menos una vez.
 
