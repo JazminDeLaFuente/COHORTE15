@@ -44,7 +44,7 @@ Ejemplos de APIs WEB
 
 //ejemplo de javaScript sincrono
 
-
+/*
 console.log ("Inicio Sincrono");//1 se ejecuta
 function dosSincrono(){
     console.log("Dos");
@@ -61,9 +61,9 @@ console.log("Fin de Sincrono");//5
 //cual es la salida de este codigo: 1, 2, 3.
 
 
-console.log("/*/*/*/*/*/*/*/*/**/*/*/*/*/*/*/*/")
+/*
 
-
+/*
 //Ejemplo de JS asincrono
 
 console.log("inicio de asincrono")
@@ -83,7 +83,8 @@ uno();
 console.log("Fin de Asincrono");//3
 
 //¿cual es la salida de este codigo?: 3, 1 y 2.
-console.log("*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*")
+
+*/
 /*
 Ejemplo de unas tareas asincronas 
 
@@ -128,7 +129,7 @@ Ejemplo de los archivos de Felipe
    -then (function resolve, function reject): Ejecutar las dos funciones resolve y reject
    -finally (function end): Ejecutar la funcion end si se cumple o no la promesa.
 */
-
+/*
 //Ejemplo de promesa para saber el nombre
 let nombre = "Jazmin" ;
 
@@ -138,9 +139,9 @@ const promesaNombre = new Promise((resolve, reject) => {
 }
 );
 console.log(promesaNombre);
-
+*/
 //Promesa de AMOR donde nos dejan en visto un ratito, y Luego nos aceptan la invitacion
-
+/*
 var promesaDeAmor = new Promise(function (resolve, reject){
     setTimeout(function(){
         resolve ("Si quiero salir contigo, te amo");
@@ -148,7 +149,7 @@ var promesaDeAmor = new Promise(function (resolve, reject){
 });
 
 promesaDeAmor.then(function(valor){
-    console.log("valor");
+    console.log("si quiero salir contigo, te amo");
 });
 
 console.log(promesaDeAmor);
@@ -162,7 +163,7 @@ const promesaTortas = new Promise((resolve, reject) => {
 }
 );
 console.log(promesaTortas);
-
+*/
 
 
 /*
@@ -175,7 +176,7 @@ Es el nombre de una nueva API(nativa) para JS con la cual podemos realizar petic
 //const solicitud = fetch('la url que vamos a consultar')
 //Guardo en una constante llamada solicitud, la consulta que hago a una pagina externa
 
-
+/*
 fetch ('https://pokeapi.co/api/v2/pokemon/pikachu')
 //realizamos la peticion a la URL de la API pokemon
          .then(datos =>{ //cuando te conectes al servidor, ejecutamos la siguiente funcion
@@ -185,13 +186,13 @@ fetch ('https://pokeapi.co/api/v2/pokemon/pikachu')
             console.log("El nombre de nuestro pokemon es:",info.name, "y su numero es:", info.id);
          });
 
-
+*/
          /*cuando hablamos de la API fetch, tambien debemos hablar de los endpoints, que son las direcciones de las peticiones que se realizan.
          
          por ejemplo, en nuestra URL https://pokeapi.co/api/v2/pokemon/pikachu, nosotros nos conectamos a la pokeapi, buscamos dentro de la categoria pokemon, y traemos la informacion de pikatchu. En este caso, pikachu es nuestro endpoint
          
          */
-
+/*
 
          function fetchPokemon(id){
             fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`) //la peticion a la URL, donde usamos el parametro id para obtener la informacion del pokemon.
@@ -199,3 +200,170 @@ fetch ('https://pokeapi.co/api/v2/pokemon/pikachu')
             .then(dato => console.log(dato)) //Imprimimos la respuesta en consola
          }
          fetchPokemon(666);
+*/
+/*
+        //Solicitud GET 
+    fetch("https://fakestoreapi.com/products/10") //realizamos la peticion a una URL
+    .then((datos) => {
+      //cuando la promesa es resuelta, entonces ejecutamos esta funcion
+      return datos.json(); //convertimos la respuesta a un formato JSON
+    })
+    .then((info) => {
+      //cuando la promesa es resuelta, entonces ejecutamos esta funcion. Estamos usando el metodo .then para obtener la respuesta de la promesa y guardarla en la variable info. Gracias a esto podre obtener la informacion que queremos.
+      console.log(
+        "El nombre de nuestro producto es:",
+        info.title,
+        " y su precio es: ",
+        info.price
+      ); //imprimimos el nombre del producto. esto es posible por que la respuesta ya esta en formato JSON, y podemos acceder a los datos directamente, especificando el nombre del campo que queremos.
+    });
+ */
+ /*
+    //Solicitud POST para enviar informacion
+    fetch('https://fakestoreapi.com/products',{
+            method:"POST",  //ppr default es get para cambiarlo debemos especificar el metodo 
+            body:JSON.stringify( //como la informacion que voy a manejar es un objeto, necesito combertirlo a un texto o un string
+
+            //cuerpo de la solicitud
+                {
+                    title: 'chettos naranjas',
+                    price: 3.0,
+                    description: 'deliciosos chettos naranjas',
+                    image: 'https://i.pravatar.cc',
+                    category: 'jewelery'
+                }
+            )
+        })
+            .then(res=>res.json())
+            .then(json=>console.log(json))
+*/
+/*
+            APIS DE ALMACENAMIENTO WEB
+
+            La API de almacenamiento web define dos mecanismos de almacenamiento que son muy importantes.
+            -almacenamiento local
+            -almacenamiento de sesiones
+    
+            tanto el almacenamiento local como el de saesiones, proporcionan un area privada para sus datos, esto quiere decir que otros sitios web no pueden acceder a esta informacion.
+    
+    
+            ALMACENAMIENTO LOCAL (LocalStorage)
+    
+            La informacion almacenada con localStorage se guarda indefinidamente hasta que sea eliminada mediante codigo o bien borrada desde el navegador.
+    
+            El almacenamiento local es similiar a las cookies, pero se borra con menos frecuencia y puede almacenar mas datos. Por lo tanto, se puede utilizar en situaciones similares, tales como: almacenar articulos que un usuario de comercio electronico agrego a un carrito, almacenar historial de uso, etc.
+    
+            La informacion que almacenamos en localStorege se elimina hasta que se haga explicitamente, ya sea por nostros o por el usuario. Nunca se limpia automaticamente y se comparte en todas las sesiones que acceder al sitio.
+    
+    
+    
+            ALMACENAMIENTO DE SESION (SessionStorage)
+    
+            La informacion que guardamos en sessionStorage solo se guarda durante la sesion del navegador (es decir, se elimina cuando se cierra el navegador). Si tenemos varias ventanas o pestañas abiertas, la informacion se guarda en cada una de ellas, asi que si cerramos una ventana, la informacion se borra de la misma.
+    
+            COMO ACCEDEMOS AL ALMACENAMIENTO?
+    
+            wiondow.localStorage
+            windows.sessionStorage
+            */
+    
+   /*Guardar datos (localStorage.setItem(key,value)
+
+La sintaxis para guardar datos en un localStorage es: localStorage.setItem(key, value);, donde key es la clave (o el identificador) y value es el valor que queremos guardar.
+*/
+/*
+    
+   
+    {
+    localStorage.setItem("nombre", "Jazmin");          
+    localStorage.setItem("Apellido","De La Fuente");
+    localStorage.setItem("Edad",27);
+    localStorage.setItem("¿Es programador?","true");
+    }
+
+    {
+    
+    localStorage.setItem("nombre1", "Gabriel");          
+    localStorage.setItem("Apellido1","Campos");
+    localStorage.setItem("Edad1",28);
+    localStorage.setItem("¿Es programador?1","true");
+    }
+
+    {
+    localStorage.setItem("nombre2", "Andrea");          
+    localStorage.setItem("Apellido2","Perez");
+    localStorage.setItem("Edad2",28);
+    localStorage.setItem("¿Es programador?2","true");
+    }
+
+
+   */ 
+//podemos almacenar objetos?
+
+
+
+/*
+RECUPERAR DATOS (localStorage.getItem(key, value))
+*/
+/*
+let recuperarNombre = localStorage.getItem("nombre");
+console.log(recuperarNombre);
+
+let recuperarEdad = localStorage.getItem("Edad");
+console.log(recuperarEdad);
+
+let recuperarProgramador = localStorage.getItem("¿Es programador?2");
+console.log(recuperarProgramador);
+*/
+/*
+//remover datos de localStorage (localStorage.removeItem(key))
+
+localStorage.removeItem("nombre"); //me borre :´(
+localStorage.removeItem("Apellido"); // borre mi apellido
+
+//conoecer el largo de nuestro almacenamiento (localStorage.length)
+let longitudlocalStorage = localStorage.length;
+console.log(longitudlocalStorage);
+
+//limpiar datos localStorage (local.storage.clear())
+localStorage.clear();
+
+//agregar elementos con sessionStorage
+
+sessionStorage.setItem("perrito", "Rocky");
+sessionStorage.setItem("gatito", "Bigotes");
+sessionStorage.setItem("nutria", "Hernesto");
+sessionStorage.setItem("caracol", "Gary");
+sessionStorage.setItem("conejo", "Griselo");
+
+let longitudSessionStorage = sessionStorage.length;
+console.log(longitudSessionStorage);
+*/
+
+function guardarDatos(){
+localStorage.nombre = document.getElementById
+("nombre").value; //vamos a guardar el valor de nombre en localStorage
+localStorage.password = document.getElementById
+("password").value;
+}
+
+{
+document.getElementById("datos").innerHTML = ("Datos guardados correctamente"); //sobreescribimos el contenido del parrafo por este nuevo mensaje
+
+//Revisar el funcionamiento correcto de mi codigo
+ console.log(typeof localStorage.nombre);
+ console.log(typeof localStorage.password);
+}
+
+//intentar esto: localStorage.length == 0
+
+function recuperaDatos(){
+
+//si en la llave nombre de mi localStorage y ademas en la llave password los datos son diferentes de undefined (significa que si hay datos), voy a mostrar el mensaje con esa informacion    
+    if(localStorage.nombre != undefined && localStorage.password != undefined){
+        document.getElementById("datos").innerHTML = "nombre:" + localStorage.nombre + "password:" + localStorage.password;
+    }else{
+        document.getElementById("datos").innerHTML = "No has introducido tu nombre y password!!!";
+    }
+    
+}

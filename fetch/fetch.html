@@ -8,8 +8,26 @@
     <link rel="stylesheet" href="/fetch/assets/css/fetch.css">
 </head>
 <body>
+<!--formulario para jugar con el almacenamiento en el local storage-->
+
+<div class="container">
+    <form>
+        <label for = "nombre">Nombre:</label>
+          <input type="text" id="nombre">
+        <label for = "password">Password:</label>
+          <input type="password" id="password">  
+          <br>
+          <br>
+
+        <input type="button" onclick="guardarDatos()"
+        value="Guardar datos" class="guardar">
+        <p id="datos">Dale click para ver tu nombre y password</p>
+        <input type="button" onclick="recuperaDatos()" value="Recuperar datos" class="recuperar">
+    </form>
 
 
+
+</div>
 
 
 

@@ -1,0 +1,16 @@
+{
+  "name": "jazmindef",
+  "version": "1.0.0",
+  "description": "Un paquete de prueba para clase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "runAxios": "node axios_test.js"
+  },
+  "author": "JazminDef",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "colors": "^1.4.0"
+  }
+}
